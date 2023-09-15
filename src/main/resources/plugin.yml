@@ -1,0 +1,5 @@
+name: Votekick
+version: '${project.version}'
+main: me.watoxxx.votekick.Votekick
+api-version: '1.20'
+authors: [Watoxxx]

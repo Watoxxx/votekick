@@ -1,0 +1,32 @@
+package me.watoxxx.votekick.util;
+
+public VoteManager{
+  Plugin p;
+  int voteMajority;
+  public VoteManager(Plugin p){
+    this.p = p;
+    //Get the config and % for players to be kicked
+  }
+  public void vote(Player p, String t, boolean b){
+      Player target = getPlayerFromString.getPlayerFromString(p, t);
+
+        if (target == null){
+            return;
+        }
+        //Add the player to the list
+        if (kick(target){
+          target.kickPlayer("§cYou have been Vote-kicked!");
+          return;
+        }
+        else{
+          //Update the actionbar
+        }
+        // Create a list with all Players and who voted for them
+  }
+  private boolean kick(Player t){
+    //test if "voteMajority" of players voted
+    return false;
+  }
+
+
+}

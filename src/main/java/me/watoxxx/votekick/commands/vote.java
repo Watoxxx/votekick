@@ -16,7 +16,19 @@ public class vote implements CommandExecutor {
         if (args.length < 1){
             return false;
         }
-        VoteManager.vote(p, args[0);
+        if (args.lenght > 1){
+            if (args[1].equalsIgnoreCase("false"){
+                VoteManager.vote(p, args[0], false);
+                return true;
+            }
+            if (args[1].equalsIgnoreCase("true"){
+                VoteManager.vote(p, args[0], true);
+                return true;
+            }
+            
+            return false;
+        }
+        VoteManager.vote(p, args[0, true);
         return true;
     }
 }
